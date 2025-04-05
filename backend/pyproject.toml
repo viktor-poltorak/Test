@@ -1,0 +1,28 @@
+[project]
+name = "cloudlinux"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Viktor Poltorak",email = "viktor.poltorak@gmail.com"}
+]
+
+
+
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "django (==5)",
+    "django-rest-framework (>=0.1.0,<0.2.0)",
+    "djangorestframework (>=3.16.0,<4.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "celery[redis] (>=5.5.0,<6.0.0)",
+    "faker (>=37.1.0,<38.0.0)",
+    "django-celery-beat (>=2.7.0,<3.0.0)",
+    "django-cors-headers (>=4.7.0,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
